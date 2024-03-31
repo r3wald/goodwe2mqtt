@@ -1,0 +1,10 @@
+certifi==2022.12.7
+goodwe==0.2.31
+influxdb-client==1.36.1
+paho-mqtt==1.6.1
+python-dateutil==2.8.2
+python-dotenv==1.0.0
+reactivex==4.0.4
+six==1.16.0
+typing-extensions==4.5.0
+urllib3==1.26.15
