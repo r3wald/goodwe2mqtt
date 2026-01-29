@@ -22,7 +22,7 @@ def connect_mqtt(config):
     port = int(config['MQTT_PORT'])
 
     # Set Connecting Client ID
-    client = mqtt_client.Client(client_id)
+    client = mqtt_client.Client(mqtt_client.CallbackAPIVersion.VERSION1,client_id)
     client.username_pw_set(username, password)
     client.on_connect = on_connect
     client.connect(host, port)
