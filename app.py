@@ -31,7 +31,7 @@ def connect_mqtt(config):
 
 def send_data_to_mqtt(config, values):
     client = connect_mqtt(config)
-    keys = ['battery_soc', 'ppv', 'grid_mode', 'grid_mode_label', 'grid_in_out', 'grid_in_out_label']
+    keys = ['battery_soc', 'ppv', 'grid_mode', 'grid_mode_label', 'grid_in_out', 'grid_in_out_label', 'battery_mode', 'battery_mode_label', 'pbattery1', 'house_consumption', 'active_power_total']
     #pprint.pprint(values)
     for key in values:
         if key not in keys:
